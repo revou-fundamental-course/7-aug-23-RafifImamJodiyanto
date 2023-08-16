@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">  
+    <title>Kalkulator Segitiga</title>
+    <!--Dibuat Oleh : Rafif Imam Jodiyanto
+    Email : rafifimam22@gmail.com-->
+</head>
+<body>
+    <header>
+        <h1 id="lu">Kalkulator Luas dan Keliling Segitiga</h1>
+    </header>
+    <main>
+        <a><center><img src="https://i.ibb.co/pytqDN4/Luass.png" width="300px" height="300px"></center></a>
+        <section>
+            <script src="js/script.js"></script>
+            <h2><center>Hitung Luas Segitiga</center></h2>
+            <section class="input-section">
+                <label for="alas-input">Alas Segitiga</label>
+                <input type="number" id="alas-input" placeholder="Nilai Alas">
+                <br>
+                <label for="tinggi-input">Tinggi Segitiga</label>
+                <input type="number" id="tinggi-input" placeholder="Nilai Tinggi">
+                <section>
+                    <button><a href="#kel">Go to Hitung Keliling</a></button>
+                    <button type="button" onclick="luas(), luas1()">Hitung Luas</button>
+                    <button onclick="document.getElementById('alas-input').value = '',
+                    document.getElementById('tinggi-input').value = ''">Reset</button>           
+                    <p> <span id="luas1"></span></p>
+                    <p>Hasil Luas Adalah <span id="luas"></span></p>  
+                    <p><br></p>
+                    <p><br></p>
+                    <p><br></p>  
+                    <p><br></p>
+                    <p><br></p>
+                    <p><br></p>                                       
+                </section>
+        </section>
+        <header>
+            <h1>Kalkulator Luas dan Keliling Segitiga</h1>
+            <p></p>   
+        </header>
+        <a><center><img src="https://i.ibb.co/C1fLRb1/Kelilingss.png" width="300px" height="300px"></center></a>
+        <section>
+            <script src="js/script.js"></script>
+            <h2><center>Hitung Keliling Segitiga</center></h2>
+            <section class="input-section">
+                <label for="s1">Sisi 1</label>
+                <input type="number" id="s1" placeholder="Nilai Sisi 1">
+                <br>
+                <label for="s2">Sisi 2</label>
+                <input type="number" id="s2" placeholder="Nilai Sisi 2">
+                <br>
+                <label for="s3">Sisi 3</label>
+                <input type="number" id="s3" placeholder="Nilai Sisi 3">
+                <section>
+                    <button><a href="#lu">Go to Hitung Luas<a></button>
+                    <button type="button" onclick="keliling(), keliling1()">Hitung Keliling</button>
+                    <button onclick="document.getElementById('s1').value = '',
+                    document.getElementById('s2').value = '',
+                    document.getElementById('s3').value = ''">Reset</button>     
+                    <p> <span id="keliling1"></span></p>
+                    <p id="kel">Hasil Keliling Adalah <span id="keliling"></span></p>                                           
+                </section>
+        </section>
+    </main>
+</body>
+</html>
